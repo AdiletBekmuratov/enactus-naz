@@ -5,32 +5,32 @@
 @layer base {
   /* inter-regular - latin */
   @font-face {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-display: optional;
-    src: url('/fonts/inter-regular-webfont.woff2') format('woff2'),
-      url('/fonts/inter-regular-webfont.woff') format('woff');
+    src: url("/fonts/inter-regular-webfont.woff2") format("woff2"),
+      url("/fonts/inter-regular-webfont.woff") format("woff");
   }
 
   /* inter-500 - latin */
   @font-face {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-display: optional;
-    src: url('/fonts/inter-medium-webfont.woff2') format('woff2'),
-      url('/fonts/inter-medium-webfont.woff') format('woff');
+    src: url("/fonts/inter-medium-webfont.woff2") format("woff2"),
+      url("/fonts/inter-medium-webfont.woff") format("woff");
   }
 
   /* inter-700 - latin */
   @font-face {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-display: optional;
-    src: url('/fonts/inter-bold-webfont.woff2') format('woff2'),
-      url('/fonts/inter-bold-webfont.woff') format('woff');
+    src: url("/fonts/inter-bold-webfont.woff2") format("woff2"),
+      url("/fonts/inter-bold-webfont.woff") format("woff");
   }
 
   /* Write your own custom base styles here */
@@ -60,5 +60,23 @@
 }
 
 .gradient {
-	background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  /* background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%); */
+  /* background: linear-gradient(90deg, #fa709a 0%, #fee140 100%); */
+  /* background: linear-gradient(90deg, #fccb90 0%, #d57eeb 100%); */
+  /* background: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  ); */
+  background: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
 }

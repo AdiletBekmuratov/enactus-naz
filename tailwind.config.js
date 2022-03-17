@@ -10,6 +10,8 @@ module.exports = {
         primary: ['Inter', ...fontFamily.sans],
       },
       colors: {
+				customLightPink: '#ff8177',
+				customDarkPink: '#b12a5b'
       },
     },
   },

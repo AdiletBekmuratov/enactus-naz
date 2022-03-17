@@ -14,11 +14,20 @@ export default function Header() {
       <nav className="flex flex-wrap items-center justify-between py-4 fixed left-0 top-0 w-full shadow-md z-30 gradient">
         <div className="container mx-auto px-4 flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between items-center lg:w-auto lg:static lg:block lg:justify-start">
-            <UnstyledLink onClick={() => setNavbarOpen(false)} href="/">
+            <UnstyledLink
+              className="text-white font-bold text-2xl"
+              onClick={() => setNavbarOpen(false)}
+              href="/"
+            >
+              {/* Nutri{" "}
+              <span className="bg-white p-1 rounded overflow-hidden text-black mix-blend-screen">
+                {" "}
+                PRO
+              </span> */}
               <img
-                src="/images/logo.png"
-                alt="logo"
-                className="h-12 object-contain"
+                src="/images/logo-long.png"
+                alt=""
+                className="object-contain h-14"
               />
             </UnstyledLink>
             <div
