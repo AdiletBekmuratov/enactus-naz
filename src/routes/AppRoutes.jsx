@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import Home from "@/pages/Home";
+import Post from "@/pages/Post";
 import Posts from "@/pages/Posts";
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -17,6 +18,7 @@ const AppRoutes = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/posts" element={<Posts />} />
+              <Route path="/posts/:slug" element={<Post />} />
             </Routes>
           </div>
           <Footer />

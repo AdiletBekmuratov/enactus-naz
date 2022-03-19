@@ -2,7 +2,7 @@ import { handleDateVal } from "@/helpers/date";
 import React from "react";
 import UnstyledLink from "./UnstyledLink";
 
-const PostCard = ({ title, imageURL, categories, author, published }) => {
+const PostCard = ({ title, imageURL, categories, author, published, slug }) => {
   return (
     <div className="p-5 bg-white shadow-md rounded flex flex-col justify-between space-y-4">
       <div className="flex flex-col space-y-4">
@@ -29,7 +29,7 @@ const PostCard = ({ title, imageURL, categories, author, published }) => {
           <p>Автор: {author ?? "Не указано"}</p>
         </div>
         <div className="w-full text-right">
-          <UnstyledLink href="/posts/1" className="hover:underline">
+          <UnstyledLink href={`/posts/${slug}`} className="hover:underline">
             Читать
           </UnstyledLink>
         </div>

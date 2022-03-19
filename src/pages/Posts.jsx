@@ -25,6 +25,7 @@ const Posts = () => {
                   categories={post?.categories}
                   author={post?.author?.name}
                   published={post?.publishedAt}
+                  slug={post?.slug?.current}
                 />
               ))
             )}
