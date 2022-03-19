@@ -1,0 +1,41 @@
+import { handleDateVal } from "@/helpers/date";
+import React from "react";
+import UnstyledLink from "./UnstyledLink";
+
+const PostCard = ({ title, imageURL, categories, author, published }) => {
+  return (
+    <div className="p-5 bg-white shadow-md rounded flex flex-col justify-between space-y-4">
+      <div className="flex flex-col space-y-4">
+        <img
+          src={imageURL}
+          alt={imageURL}
+          className="object-cover w-full rounded aspect-video"
+        />
+        <h4>{title}</h4>
+      </div>
+      <div className="flex flex-col space-y-4">
+        <div className="flex flex-wrap items-center lowercase text-white text-xs">
+          {categories && categories.map((category) => (
+            <p
+              key={category._id}
+              className="rounded-full bg-customLightPink py-1 px-2"
+            >
+              {category.title}
+            </p>
+          ))}
+        </div>
+        <div className="flex justify-between flex-wrap items-center">
+          <p>{handleDateVal(published)}</p>
+          <p>Автор: {author ?? "Не указано"}</p>
+        </div>
+        <div className="w-full text-right">
+          <UnstyledLink href="/posts/1" className="hover:underline">
+            Читать
+          </UnstyledLink>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PostCard;

@@ -1,5 +1,8 @@
 import React from 'react'
-import UnstyledLink from './UnstyledLink'
+import { NavLink } from 'react-router-dom'
+
+const notActiveClass = 'px-3 py-2 flex items-center text-xl hover:opacity-75 text-white'
+const activeClass = 'px-3 py-2 flex items-center text-xl font-semibold hover:opacity-75 text-white'
 
 const HeaderLink = ({ href, condition, name, onClick }) => {
 	if (!condition) {
@@ -8,13 +11,13 @@ const HeaderLink = ({ href, condition, name, onClick }) => {
 
 	return (
 		<li className="nav-item">
-			<UnstyledLink
+			<NavLink
 				onClick={onClick}
-				className="px-3 py-2 flex items-center text-xl hover:opacity-75 text-white"
-				href={href}
+				className={({isActive}) => isActive ? activeClass : notActiveClass }
+				to={href}
 			>
 				<span>{name}</span>
-			</UnstyledLink>
+			</NavLink>
 		</li>
 	)
 }

@@ -15,19 +15,14 @@ export default function Header() {
         <div className="container mx-auto px-4 flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between items-center lg:w-auto lg:static lg:block lg:justify-start">
             <UnstyledLink
-              className="text-white font-bold text-2xl"
+              className="text-white font-bold text-2xl "
               onClick={() => setNavbarOpen(false)}
               href="/"
             >
-              {/* Nutri{" "}
-              <span className="bg-white p-1 rounded overflow-hidden text-black mix-blend-screen">
-                {" "}
-                PRO
-              </span> */}
               <img
                 src="/images/logo-long.png"
                 alt=""
-                className="object-contain h-14"
+                className="object-contain h-14 hover:opacity-90"
               />
             </UnstyledLink>
             <div
@@ -58,12 +53,17 @@ export default function Header() {
           >
             <ul className="flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0 space-x-0 space-y-1 list-none lg:ml-auto">
               {/* <label for="menu-switch" id="menu-toggle"></label> */}
-
               <HeaderLink
                 condition={true}
                 onClick={handleNavbarClose}
                 href="/"
                 name="Главная"
+              />
+              <HeaderLink
+                condition={true}
+                onClick={handleNavbarClose}
+                href="/posts"
+                name="Публикации"
               />
             </ul>
           </div>

@@ -80,3 +80,30 @@
     #b12a5b 100%
   );
 }
+
+.blob-loader {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+}
+.blob-loader::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #168ae8 content-box;
+  box-sizing: border-box;
+  border-top: 15px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}

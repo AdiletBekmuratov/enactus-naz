@@ -1,22 +1,18 @@
+import ContactUs from "@/components/ContactUs";
+import Description from "@/components/MainPage/Description";
 import Hero from "@/components/MainPage/Hero";
+import HeroWave from "@/components/MainPage/HeroWave";
+import LatestPosts from "@/components/MainPage/LatestPosts";
 import Steps from "@/components/Steps/Steps";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <div className="relative gradient">
-        <img
-          src="/images/hero-wave.svg"
-          alt="hero-img"
-          className="object-fit"
-        />
-      </div>
-      <section className="bg-white">
-        <div className="container mx-auto px-5 py-8">
-          <Steps />
-        </div>
-      </section>
+      <HeroWave className="text-gray-50 gradient" />
+      <Description />
+      <LatestPosts />
+      <ContactUs />
     </>
   );
 };
