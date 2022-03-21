@@ -6,7 +6,6 @@
       "@/components/*": ["./components/*"],
       "@/pages/*": ["./pages/*"],
       "@/routes/*": ["./routes/*"],
-			"@/assets/*": ["./assets/*"],
 			"@/redux/*": ["./redux/*"],
 			"@/helpers/*": ["./helpers/*"]
     },

@@ -1,11 +1,9 @@
 import React from "react";
-import Lottie from "lottie-react";
-import FoodAnim from "@/assets/lottie/healthy-or-junk-food.json";
 
 const Hero = () => {
   return (
     <div className="gradient text-white">
-      <div className="container px-5 mx-auto flex flex-wrap flex-col md:flex-row items-center justify-between">
+      <div className="container px-5 mx-auto py-16 md:py-0 flex flex-wrap flex-col md:flex-row items-center justify-between">
         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <h1 className="my-4 text-2xl md:text-5xl font-bold leading-tight">
             Получите индивидуальный план правильного питания
@@ -19,12 +17,14 @@ const Hero = () => {
           </button>
         </div>
         <div className="w-full md:w-3/5 py-6 text-center flex justify-center">
-          <Lottie
-            animationData={FoodAnim}
-            loop={true}
-            className="w-full md:w-4/5"
-            autoplay={true}
-          />
+          <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_tll0j4bb.json"
+            background="transparent"
+            speed="1"
+						style={{width: "80%"}}
+            loop
+            autoplay
+          ></lottie-player>
         </div>
       </div>
     </div>

@@ -1,10 +1,8 @@
+import { useContactUsMutation } from "@/redux/services/public.service";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import React from "react";
-import * as Yup from "yup";
-import { useContactUsMutation } from "@/redux/services/public.service";
 import toast from "react-hot-toast";
-import ContactUsAnim from "@/assets/lottie/contact-us.json";
-import Lottie from "lottie-react";
+import * as Yup from "yup";
 
 const ContactSchema = Yup.object().shape({
   email: Yup.string()
@@ -33,12 +31,14 @@ const ContactUs = () => {
     <section className="text-gray-600 body-font relative">
       <div className="container px-5 py-24 mx-auto grid grid-cols-1 md:grid-cols-2 justify-center items-center">
         <div>
-          <Lottie
-            animationData={ContactUsAnim}
-            loop={true}
-            className="w-full"
-            autoplay={true}
-          />
+          <lottie-player
+            src="https://assets3.lottiefiles.com/packages/lf20_x9mnlnj6.json"
+            background="transparent"
+            speed="1"
+            style={{width: '100%'}}
+            loop
+            autoplay
+          ></lottie-player>
         </div>
         <div>
           <div className="flex flex-col text-center w-full mb-12">

@@ -1,7 +1,5 @@
 import ContactUs from "@/components/ContactUs";
 import React from "react";
-import Lottie from "lottie-react";
-import GroupPeople from "@/assets/lottie/group-of-people.json";
 
 const About = () => {
   return (
@@ -39,12 +37,14 @@ const About = () => {
             </div>
           </div>
           <div>
-            <Lottie
-              animationData={GroupPeople}
-              loop={true}
-              className="w-full"
-              autoplay={true}
-            />
+            <lottie-player
+              src="https://assets2.lottiefiles.com/packages/lf20_5e7wgehs.json"
+              background="transparent"
+              speed="1"
+              style={{width: '100%'}}
+              loop
+              autoplay
+            ></lottie-player>
           </div>
         </div>
       </section>
