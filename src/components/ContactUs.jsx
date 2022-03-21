@@ -30,7 +30,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font  relative">
+    <section className="text-gray-600 body-font relative">
       <div className="container px-5 py-24 mx-auto grid grid-cols-1 md:grid-cols-2 justify-center items-center">
         <div>
           <Lottie

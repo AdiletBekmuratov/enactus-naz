@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
+import About from "@/pages/About";
 import Home from "@/pages/Home";
 import Post from "@/pages/Post";
 import Posts from "@/pages/Posts";
@@ -17,6 +18,7 @@ const AppRoutes = () => {
           <div className="flex-grow flex flex-col pt-20">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
               <Route path="/posts" element={<Posts />} />
               <Route path="/posts/:slug" element={<Post />} />
             </Routes>

@@ -65,6 +65,12 @@ export default function Header() {
                 href="/posts"
                 name="Публикации"
               />
+							<HeaderLink
+                condition={true}
+                onClick={handleNavbarClose}
+                href="/about"
+                name="О нас"
+              />
             </ul>
           </div>
         </div>
