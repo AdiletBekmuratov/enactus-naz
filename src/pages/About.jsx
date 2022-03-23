@@ -22,7 +22,8 @@ const About = () => {
               <h4>Наша цель</h4>
               <p>
                 Мы стремимся помочь людям избавиться от вредного питания из их
-                диет и заменить его на полезную, но также не менее вкусную пищу!
+                рациона и заменить его на полезную, но также не менее вкусную
+                пищу!
               </p>
             </div>
             <div className="flex flex-col space-y-2">
@@ -41,7 +42,7 @@ const About = () => {
               src="https://assets2.lottiefiles.com/packages/lf20_5e7wgehs.json"
               background="transparent"
               speed="1"
-              style={{width: '100%'}}
+              style={{ width: "100%" }}
               loop
               autoplay
             ></lottie-player>

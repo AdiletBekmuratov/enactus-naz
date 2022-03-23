@@ -2,12 +2,12 @@ import React from "react";
 
 const BlobStep = ({ text, blob, icon }) => {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="relative hover:opacity-90 transition duration-100 ease-in-out cursor-pointer">
+    <div className="flex flex-col justify-center items-center w-full">
+      <div className="relative hover:opacity-90 hover:scale-110 transition duration-300 ease-in-out">
         {blob}
         {icon}
       </div>
-      <p className="text-base md:text-xl">{text}</p>
+      <p className="font-semibold md:text-xl">{text}</p>
     </div>
   );
 };

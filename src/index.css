@@ -178,11 +178,27 @@
   margin-top: -3px;
 }
 
+.magnet {
+  transition: transform 0.15s linear;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 .loader-wrapper {
   position: fixed;
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #ff8177;
