@@ -117,7 +117,11 @@ const Post = () => {
         <div>
           <div className="flex space-x-2 items-center">
             <h4>Дата публикации:</h4>
-            <p>{handleDateVal(data?.result?.publishedAt)}</p>
+            <p>
+              {!!data?.result?.publishedAt
+                ? handleDateVal(data?.result?.publishedAt)
+                : "Не указан"}
+            </p>
           </div>
           <div className="flex space-x-2 items-center">
             <h4>Автор:</h4>

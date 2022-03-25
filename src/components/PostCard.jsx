@@ -30,7 +30,7 @@ const PostCard = ({ title, imageURL, categories, author, published, slug }) => {
         <div className="flex flex-col space-y-2 justify-start flex-wrap items-start">
           <p>
             Дата публикации:{" "}
-            {!!published ? handleDateVal(published) : "Не указан"} {}
+            {!!published ? handleDateVal(published) : "Не указан"}
           </p>
           <p>Автор: {author ?? "Не указан"}</p>
         </div>
