@@ -52,7 +52,6 @@ export default function Header() {
             id="example-navbar-danger"
           >
             <ul className="flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0 space-x-0 space-y-1 list-none lg:ml-auto">
-              {/* <label for="menu-switch" id="menu-toggle"></label> */}
               <HeaderLink
                 condition={true}
                 onClick={handleNavbarClose}
@@ -62,10 +61,16 @@ export default function Header() {
               <HeaderLink
                 condition={true}
                 onClick={handleNavbarClose}
+                href="/plan"
+                name="Создать меню"
+              />
+              <HeaderLink
+                condition={true}
+                onClick={handleNavbarClose}
                 href="/posts"
                 name="Публикации"
               />
-							<HeaderLink
+              <HeaderLink
                 condition={true}
                 onClick={handleNavbarClose}
                 href="/about"

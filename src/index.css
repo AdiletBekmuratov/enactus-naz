@@ -267,3 +267,20 @@
     color: #9356dc;
   }
 }
+
+input[type="radio"].css-checkbox {
+  display: none;
+}
+input[type="radio"].css-checkbox:checked + label.css-label {
+  background-color: #ff8177;
+  color: white;
+}
+
+input[type="checkbox"].css-checkbox {
+  display: none;
+}
+
+input[type="checkbox"].css-checkbox:checked + label.css-label {
+  background-color: #ff8177;
+  color: white;
+}

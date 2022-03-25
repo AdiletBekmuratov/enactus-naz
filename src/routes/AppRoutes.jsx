@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageLoader from "@/components/PageLoader";
+import ScrollToTop from "@/components/ScrollToTop";
 import PDF from "@/pages/PDF";
 import Plan from "@/pages/Plan";
 import { lazy, Suspense } from "react";
@@ -16,21 +17,23 @@ const AppRoutes = () => {
   return (
     <Router>
       <Suspense fallback={<PageLoader />}>
-        <Toaster position="top-right" reverseOrder={false} />
-        <Header />
-        <div className="flex flex-col justify-start overflow-x-hidden min-h-screen bg-gray-50">
-          <div className="flex-grow flex flex-col pt-20">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/posts" element={<Posts />} />
-              <Route path="/posts/:slug" element={<Post />} />
-              <Route path="/pdf" element={<PDF />} />
-              <Route path="/plan" element={<Plan />} />
-            </Routes>
+        <ScrollToTop>
+          <Toaster position="top-right" reverseOrder={false} />
+          <Header />
+          <div className="flex flex-col justify-start overflow-x-hidden min-h-screen bg-gray-50">
+            <div className="flex-grow flex flex-col pt-20">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/posts" element={<Posts />} />
+                <Route path="/posts/:slug" element={<Post />} />
+                <Route path="/pdf" element={<PDF />} />
+                <Route path="/plan" element={<Plan />} />
+              </Routes>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
+        </ScrollToTop>
       </Suspense>
     </Router>
   );
