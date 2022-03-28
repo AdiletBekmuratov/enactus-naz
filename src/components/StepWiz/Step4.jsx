@@ -13,7 +13,6 @@ import Spinach from "../Icons/Spinach";
 
 const Step4 = ({ nextStep, previousStep, setStep }) => {
   const handleSubmit = (values) => {
-    console.log(values);
     setStep(values);
   };
 
@@ -27,7 +26,13 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
     >
       {({ values }) => (
         <Form className="flex flex-col space-y-10 justify-center items-start">
-          <h2>Овощи</h2>
+          <div>
+            <h2>Овощи</h2>
+            <p>
+              <span className="text-red-500">*</span> Можно выбрать несколько
+            </p>
+          </div>
+
           <div className="flex space-x-10 items-stretch">
             <div className="min-h-full">
               <Field
@@ -108,7 +113,12 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
             </div>
           </div>
 
-          <h2>Фрукты</h2>
+          <div>
+            <h2>Фрукты</h2>
+            <p>
+              <span className="text-red-500">*</span> Можно выбрать несколько
+            </p>
+          </div>
 
           <div className="flex space-x-10 items-stretch">
             <div className="min-h-full">

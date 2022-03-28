@@ -13,18 +13,18 @@ const Step3 = ({ nextStep, previousStep, meat, setMeat }) => {
       <div className="flex space-x-10 items-stretch">
         <div className="min-h-full">
           <input
-            id="Куриное грудка"
+            id="Куриная грудка"
             type="radio"
             className="css-checkbox"
-            value="Куриное грудка"
-            checked={meat === "Куриное грудка"}
+            value="Куриная грудка"
+            checked={meat === "Куриная грудка"}
             onChange={onStateChange}
           />
           <label
-            for="Куриное грудка"
+            for="Куриная грудка"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
-            <GiRoastChicken size={36} /> <span>Куриное грудка</span>
+            <GiRoastChicken size={36} /> <span>Куриная грудка</span>
           </label>
         </div>
 

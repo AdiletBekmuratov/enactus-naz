@@ -7,7 +7,7 @@ const About = () => {
       <section className="text-gray-600">
         <div className="container px-5 py-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 justify-between items-start">
           <div className="grid grid-cols-1 gap-6">
-            <h2 className="text-gray-900">О нас</h2>
+            <h2>О нас</h2>
             <div className="flex flex-col space-y-2">
               <h4>Кто мы</h4>
               <p>

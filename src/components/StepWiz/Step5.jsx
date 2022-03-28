@@ -1,32 +1,39 @@
 import { Field, Form, Formik } from "formik";
 import React from "react";
-import { GiPeanut } from "react-icons/gi";
+import { GiPeanut, GiBreadSlice } from "react-icons/gi";
+import { FaBreadSlice } from "react-icons/fa";
 import Almond from "../Icons/Almond";
 import Apricot from "../Icons/Apricot";
 import Cashew from "../Icons/Cashew";
 import Dates from "../Icons/Dates";
+import Dill from "../Icons/Dill";
+import Lettuce from "../Icons/Lettuce";
+import Parsley from "../Icons/Parsley";
 import Pranes from "../Icons/Pranes";
 import Raisin from "../Icons/Raisin";
 import Walnut from "../Icons/Walnut";
+import Cracker from "../Icons/Cracker";
 
-const Step5 = ({ nextStep, previousStep, setStep }) => {
-  const handleSubmit = (values) => {
-    console.log(values);
-    setStep(values)
-  };
-
+const Step5 = ({ nextStep, previousStep, onFinish }) => {
   return (
     <Formik
       initialValues={{
         nuts: [],
         driedFruits: [],
+        zelen: [],
+        breads: [],
       }}
-      onSubmit={handleSubmit}
+      onSubmit={onFinish}
     >
       {({ values }) => (
         <Form className="flex flex-col space-y-10 justify-center items-start">
-          <h2>Орехи</h2>
-          <div className="flex space-x-10 items-stretch">
+          <div>
+            <h2>Орехи</h2>
+            <p>
+              <span className="text-red-500">*</span> Можно выбрать несколько
+            </p>
+          </div>
+          <div className="flex space-x-10 items-stretch flex-wrap">
             <div className="min-h-full">
               <Field
                 id="Грецкий"
@@ -91,8 +98,12 @@ const Step5 = ({ nextStep, previousStep, setStep }) => {
             </div>
           </div>
 
-          <h2>Сухофрукты</h2>
-
+          <div>
+            <h2>Сухофрукты</h2>
+            <p>
+              <span className="text-red-500">*</span> Можно выбрать несколько
+            </p>
+          </div>
           <div className="flex space-x-10 items-stretch">
             <div className="min-h-full">
               <Field
@@ -158,6 +169,118 @@ const Step5 = ({ nextStep, previousStep, setStep }) => {
             </div>
           </div>
 
+          <div>
+            <h2>Зелень</h2>
+            <p>
+              <span className="text-red-500">*</span> Можно выбрать несколько
+            </p>
+          </div>
+          <div className="flex space-x-10 items-stretch">
+            <div className="min-h-full">
+              <Field
+                id="Укроп"
+                name="zelen"
+                type="checkbox"
+                className="css-checkbox"
+                value="Укроп"
+              />
+              <label
+                for="Укроп"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+              >
+                <Dill size={36} /> <span>Укроп</span>
+              </label>
+            </div>
+
+            <div className="min-h-full">
+              <Field
+                id="Петрушка"
+                name="zelen"
+                type="checkbox"
+                className="css-checkbox"
+                value="Петрушка"
+              />
+              <label
+                for="Петрушка"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+              >
+                <Parsley size={36} /> <span>Петрушка</span>
+              </label>
+            </div>
+
+            <div className="min-h-full">
+              <Field
+                id="Листья салата"
+                name="zelen"
+                type="checkbox"
+                className="css-checkbox"
+                value="Листья салата"
+              />
+              <label
+                for="Листья салата"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+              >
+                <Lettuce size={36} /> <span>Листья салата</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <h2>Хлеб</h2>
+            <p>
+              <span className="text-red-500">*</span> Можно выбрать несколько
+            </p>
+          </div>
+          <div className="flex space-x-10 items-stretch">
+            <div className="min-h-full">
+              <Field
+                id="Цельнозерновой хлеб"
+                name="breads"
+                type="checkbox"
+                className="css-checkbox"
+                value="Цельнозерновой хлеб"
+              />
+              <label
+                for="Цельнозерновой хлеб"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-lg w-[160px] h-full text-center"
+              >
+                <FaBreadSlice size={36} /> <span>Цельнозерновой хлеб</span>
+              </label>
+            </div>
+
+            <div className="min-h-full">
+              <Field
+                id="Хлебцы"
+                name="breads"
+                type="checkbox"
+                className="css-checkbox"
+                value="Хлебцы"
+              />
+              <label
+                for="Хлебцы"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+              >
+                <GiBreadSlice size={36} /> <span>Хлебцы</span>
+              </label>
+            </div>
+
+            <div className="min-h-full">
+              <Field
+                id="Крекеры"
+                name="breads"
+                type="checkbox"
+                className="css-checkbox"
+                value="Крекеры"
+              />
+              <label
+                for="Крекеры"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+              >
+                <Cracker size={36} /> <span>Крекеры</span>
+              </label>
+            </div>
+          </div>
+
           <div className="flex justify-center items-center space-x-10">
             <button
               className="flex justify-between items-center bg-white text-gray-800 font-bold rounded-full py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out disabled:bg-gray-200 disabled:cursor-not-allowed"
@@ -167,13 +290,15 @@ const Step5 = ({ nextStep, previousStep, setStep }) => {
             </button>
             <button
               className="flex justify-between items-center bg-white text-gray-800 font-bold rounded-full py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out disabled:bg-gray-200 disabled:cursor-not-allowed"
-              onClick={nextStep}
               type="submit"
               disabled={
-                values.nuts.length <= 0 || values.driedFruits.length <= 0
+                values.nuts.length <= 0 ||
+                values.driedFruits.length <= 0 ||
+                values.zelen.length <= 0 ||
+                values.breads.length <= 0
               }
             >
-              Продолжить
+              Завершить
             </button>
           </div>
         </Form>

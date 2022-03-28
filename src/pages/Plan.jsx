@@ -6,8 +6,10 @@ import Step4 from "@/components/StepWiz/Step4";
 import Step5 from "@/components/StepWiz/Step5";
 import React, { useState } from "react";
 import StepWizard from "react-step-wizard";
+import { useNavigate } from "react-router-dom";
 
 const Plan = () => {
+  const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
   const [gender, setGender] = useState(null);
   const [milk1, setMilk1] = useState(null);
@@ -17,7 +19,17 @@ const Plan = () => {
 
   const [step4, setStep4] = useState(null);
 
-  const [step5, setStep5] = useState(null);
+  const onFinish = (values) => {
+    const data = {
+      milk1,
+      milk2,
+      meat,
+      ...step4,
+      ...values,
+    };
+		console.log({data});
+    navigate("/result", { state: { data } });
+  };
 
   const onStepChange = (stats) => {
     setCurrentStep(stats.activeStep);
@@ -26,7 +38,7 @@ const Plan = () => {
   return (
     <section className="text-gray-600">
       <div className="container px-5 py-16 mx-auto grid grid-cols-1 gap-6">
-        <h2 className="text-gray-900">Получите свой план питания</h2>
+        <h2>Получите свой план питания</h2>
         <Steps step={currentStep} />
         <StepWizard className="min-h-[300px] mt-10" onStepChange={onStepChange}>
           <Step1 gender={gender} setGender={setGender} />
@@ -38,7 +50,7 @@ const Plan = () => {
           />
           <Step3 meat={meat} setMeat={setMeat} />
           <Step4 setStep={setStep4} />
-          <Step5 setStep={setStep5} />
+          <Step5 onFinish={onFinish} />
         </StepWizard>
 
         {/* {sw && (

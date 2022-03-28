@@ -111,7 +111,7 @@ const Post = () => {
   }
 
   return (
-    <main className="container mx-auto px-5 py-16">
+    <main className="container mx-auto px-5 py-16 text-gray-600">
       <div className="flex flex-col space-y-4 items-start">
         <h2>{data?.result?.title}</h2>
         <div>

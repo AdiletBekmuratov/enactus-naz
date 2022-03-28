@@ -4,10 +4,33 @@ import PageLoaderMenu from "@/components/PageLoaderMenu";
 import PDFMenu from "@/components/PDF/PDFMenu";
 import pdf from "@react-pdf/renderer";
 import React from "react";
+import { useLocation } from "react-router-dom";
 const { usePDF } = pdf;
 
 const PDF = () => {
-  const [instance, updateInstance] = usePDF({ document: <PDFMenu /> });
+  const { state } = useLocation();
+
+  if (!state) {
+    return (
+      <section className="container mx-auto px-5 py-16 grid grid-cols-1 md:grid-cols-2 justify-center items-center text-gray-600">
+        <h2 className="text-center md:text-left">
+          Пожалуйста, сперва пройдите тест для составления индивидуального плана
+        </h2>
+        <lottie-player
+          src="https://assets1.lottiefiles.com/private_files/lf30_bcbd2axv.json"
+          background="transparent"
+          speed="1"
+          style={{ width: "100%" }}
+          loop
+          autoplay
+        ></lottie-player>
+      </section>
+    );
+  }
+
+  const [instance, updateInstance] = usePDF({
+    document: <PDFMenu data={state.data} />,
+  });
 
   if (instance.loading) return <PageLoaderMenu />;
   if (instance.error)
@@ -19,13 +42,11 @@ const PDF = () => {
 
   return (
     <>
-      <section className="container mx-auto px-5 py-16">
+      <section className="container mx-auto px-5 py-16 text-gray-600">
         <div className="grid grid-cols-2 justify-center items-center gap-16">
           <div className="flex flex-col justify-center items-center space-y-16">
             <div className="text-center">
-              <h2 className="text-gray-900">
-                Индивидуальный план питания готов
-              </h2>
+              <h2>Индивидуальный план питания готов</h2>
               <h4>Спасибо, что выбираете нас!</h4>
             </div>
             <MagnetButton>
@@ -52,7 +73,7 @@ const PDF = () => {
           </div>
         </div>
       </section>
-			<ContactUs />
+      <ContactUs />
     </>
   );
 };
