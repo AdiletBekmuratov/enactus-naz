@@ -2,6 +2,7 @@ import React from "react";
 import { BsFillPersonFill } from "react-icons/bs";
 import { GiBroccoli, GiMeat, GiSlicedBread } from "react-icons/gi";
 import { SiHappycow } from "react-icons/si";
+import { FaDumbbell } from "react-icons/fa";
 import Blob from "./Blob";
 import Blob2 from "./Blob2";
 import Blob3 from "./Blob3";
@@ -16,7 +17,7 @@ const Steps = ({ step }) => {
   return (
     <div className="flex justify-evenly flex-nowrap items-center space-x-4">
       <BlobStep
-        text={"Пол"}
+        text={"Общая информация"}
         icon={<BsFillPersonFill className={iconClasses} />}
         blob={
           <Blob
@@ -32,8 +33,8 @@ const Steps = ({ step }) => {
         }`}
       />
       <BlobStep
-        text={"Молочные продукты"}
-        icon={<SiHappycow className={iconClasses} />}
+        text={"Физическая активность"}
+        icon={<FaDumbbell className={iconClasses} />}
         blob={
           <Blob2
             className={`w-full transition duration-200 ease-in-out ${
@@ -48,8 +49,8 @@ const Steps = ({ step }) => {
         }`}
       />
       <BlobStep
-        text={"Мясо"}
-        icon={<GiMeat className={iconClasses} />}
+        text={"Молочные продукты"}
+        icon={<SiHappycow className={iconClasses} />}
         blob={
           <Blob3
             className={`w-full transition duration-200 ease-in-out ${
@@ -64,8 +65,8 @@ const Steps = ({ step }) => {
         }`}
       />
       <BlobStep
-        text={"Овощи и фрукты"}
-        icon={<GiBroccoli className={iconClasses} />}
+        text={"Мясо"}
+        icon={<GiMeat className={iconClasses} />}
         blob={
           <Blob
             className={`w-full transition duration-200 ease-in-out ${
@@ -80,12 +81,28 @@ const Steps = ({ step }) => {
         }`}
       />
       <BlobStep
-        text={"Доп. продукты"}
-        icon={<GiSlicedBread className={iconClasses} />}
+        text={"Овощи и фрукты"}
+        icon={<GiBroccoli className={iconClasses} />}
         blob={
           <Blob2
             className={`w-full transition duration-200 ease-in-out ${
               step >= 5 ? "text-customLightPink" : "text-gray-200"
+            }`}
+          />
+        }
+      />
+      <StepStroke
+        className={`w-full transition duration-200 ease-in-out ${
+          step >= 6 ? "text-customLightPink" : "text-gray-200"
+        }`}
+      />
+      <BlobStep
+        text={"Доп. продукты"}
+        icon={<GiSlicedBread className={iconClasses} />}
+        blob={
+          <Blob3
+            className={`w-full transition duration-200 ease-in-out ${
+              step >= 6 ? "text-customLightPink" : "text-gray-200"
             }`}
           />
         }

@@ -7,11 +7,13 @@ import Step5 from "@/components/StepWiz/Step5";
 import React, { useState } from "react";
 import StepWizard from "react-step-wizard";
 import { useNavigate } from "react-router-dom";
+import StepPhys from "@/components/StepWiz/StepPhys";
 
 const Plan = () => {
   const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
   const [step1, setStep1] = useState(null);
+  const [stepPhys, setStepPhys] = useState(null);
   const [milk1, setMilk1] = useState(null);
   const [milk2, setMilk2] = useState(null);
 
@@ -22,6 +24,7 @@ const Plan = () => {
   const onFinish = (values) => {
     const data = {
       ...step1,
+      ...stepPhys,
       milk1,
       milk2,
       meat,
@@ -43,6 +46,7 @@ const Plan = () => {
         <Steps step={currentStep} />
         <StepWizard className="min-h-[300px] mt-10" onStepChange={onStepChange}>
           <Step1 setStep={setStep1} />
+          <StepPhys setStep={setStepPhys} />
           <Step2
             milk1={milk1}
             setMilk1={setMilk1}

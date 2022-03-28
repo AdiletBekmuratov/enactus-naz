@@ -21,7 +21,7 @@ const Step3 = ({ nextStep, previousStep, meat, setMeat }) => {
             onChange={onStateChange}
           />
           <label
-            for="Куриная грудка"
+            htmlFor="Куриная грудка"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
             <GiRoastChicken size={36} /> <span>Куриная грудка</span>
@@ -38,7 +38,7 @@ const Step3 = ({ nextStep, previousStep, meat, setMeat }) => {
             onChange={onStateChange}
           />
           <label
-            for="Индейка"
+            htmlFor="Индейка"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
             <GiChickenOven size={36} /> <span>Индейка</span>
@@ -55,7 +55,7 @@ const Step3 = ({ nextStep, previousStep, meat, setMeat }) => {
             onChange={onStateChange}
           />
           <label
-            for="Страус"
+            htmlFor="Страус"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
             <Ostrich size={36} /> <span>Страус</span>

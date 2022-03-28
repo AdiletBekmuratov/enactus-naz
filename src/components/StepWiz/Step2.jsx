@@ -34,7 +34,7 @@ const Step2 = ({
             onChange={onMilk1Change}
           />
           <label
-            for="milk"
+            htmlFor="milk"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
             <GiCow size={36} /> <span>Молоко 2,5%</span>
@@ -50,7 +50,7 @@ const Step2 = ({
             onChange={onMilk1Change}
           />
           <label
-            for="slivki"
+            htmlFor="slivki"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
             <GiMilkCarton size={36} /> <span>Сливки</span>
@@ -66,7 +66,7 @@ const Step2 = ({
             onChange={onMilk1Change}
           />
           <label
-            for="sgushenka"
+            htmlFor="sgushenka"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
             <GiCoveredJar size={36} /> <span>Сгущенка</span>
@@ -85,7 +85,7 @@ const Step2 = ({
             onChange={onMilk2Change}
           />
           <label
-            for="tvorog"
+            htmlFor="tvorog"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
             <BiDish size={36} /> <span>Творог 5%</span>
@@ -101,7 +101,7 @@ const Step2 = ({
             onChange={onMilk2Change}
           />
           <label
-            for="tofu"
+            htmlFor="tofu"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
             <GiCubes size={36} /> <span>Тофу</span>
@@ -117,7 +117,7 @@ const Step2 = ({
             onChange={onMilk2Change}
           />
           <label
-            for="rikottu"
+            htmlFor="rikottu"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
             <FaDashcube size={36} /> <span>Рикотту</span>
@@ -133,7 +133,7 @@ const Step2 = ({
             onChange={onMilk2Change}
           />
           <label
-            for="maskrapone"
+            htmlFor="maskrapone"
             className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
           >
             <SiRoundcube size={36} /> <span>Маскарпоне</span>

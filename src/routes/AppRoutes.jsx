@@ -20,7 +20,7 @@ const AppRoutes = () => {
         <ScrollToTop>
           <Toaster position="top-right" reverseOrder={false} />
           <Header />
-          <div className="flex flex-col justify-start overflow-x-hidden min-h-screen bg-gray-50">
+          <div className="flex flex-col justify-start overflow-hidden min-h-screen bg-gray-50">
             <div className="flex-grow flex flex-col pt-20">
               <Routes>
                 <Route path="/" element={<Home />} />

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <FooterWave />
-      <footer className="text-white bg-customDarkPink">
+      <footer className="text-white bg-customLightPink">
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center">
             <img src="/images/logo-without-text.png" alt="logo" className="w-12" />

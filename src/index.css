@@ -4,15 +4,15 @@
 
 @layer base {
   h1 {
-    @apply text-3xl font-bold md:text-5xl font-primary;
+    @apply text-3xl font-bold md:text-4xl font-primary;
   }
 
   h2 {
-    @apply text-2xl font-bold md:text-4xl font-primary;
+    @apply text-2xl font-bold md:text-3xl font-primary;
   }
 
   h3 {
-    @apply text-xl font-bold md:text-3xl font-primary;
+    @apply text-xl font-bold md:text-2xl font-primary;
   }
 
   h4 {
@@ -244,6 +244,7 @@
 input[type="radio"].css-checkbox {
   display: none;
 }
+
 input[type="radio"].css-checkbox:checked + label.css-label {
   background-color: #ff8177;
   color: white;

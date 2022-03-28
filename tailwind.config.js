@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["'Proxima Nova'", 'sans-serif']
+        primary: ["Montserrat", 'sans-serif']
       },
       colors: {
         customLightPink: "#ff8177",

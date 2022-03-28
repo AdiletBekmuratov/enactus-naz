@@ -43,7 +43,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Грецкий"
               />
               <label
-                for="Грецкий"
+                htmlFor="Грецкий"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Walnut size={36} /> <span>Грецкий</span>
@@ -59,7 +59,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Миндаль"
               />
               <label
-                for="Миндаль"
+                htmlFor="Миндаль"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Almond size={36} /> <span>Миндаль</span>
@@ -75,7 +75,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Кешью"
               />
               <label
-                for="Кешью"
+                htmlFor="Кешью"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Cashew size={36} /> <span>Кешью</span>
@@ -90,7 +90,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Арахис"
               />
               <label
-                for="Арахис"
+                htmlFor="Арахис"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <GiPeanut size={36} /> <span>Арахис</span>
@@ -114,7 +114,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Курага"
               />
               <label
-                for="Курага"
+                htmlFor="Курага"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Apricot size={36} /> <span>Курага</span>
@@ -130,7 +130,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Чернослив"
               />
               <label
-                for="Чернослив"
+                htmlFor="Чернослив"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Pranes size={36} /> <span>Чернослив</span>
@@ -146,7 +146,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Изюм"
               />
               <label
-                for="Изюм"
+                htmlFor="Изюм"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Raisin size={36} /> <span>Изюм</span>
@@ -161,7 +161,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Финики"
               />
               <label
-                for="Финики"
+                htmlFor="Финики"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Dates size={36} /> <span>Финики</span>
@@ -185,7 +185,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Укроп"
               />
               <label
-                for="Укроп"
+                htmlFor="Укроп"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Dill size={36} /> <span>Укроп</span>
@@ -201,7 +201,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Петрушка"
               />
               <label
-                for="Петрушка"
+                htmlFor="Петрушка"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Parsley size={36} /> <span>Петрушка</span>
@@ -217,7 +217,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Листья салата"
               />
               <label
-                for="Листья салата"
+                htmlFor="Листья салата"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Lettuce size={36} /> <span>Листья салата</span>
@@ -241,7 +241,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Цельнозерновой хлеб"
               />
               <label
-                for="Цельнозерновой хлеб"
+                htmlFor="Цельнозерновой хлеб"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-lg w-[160px] h-full text-center"
               >
                 <FaBreadSlice size={36} /> <span>Цельнозерновой хлеб</span>
@@ -257,7 +257,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Хлебцы"
               />
               <label
-                for="Хлебцы"
+                htmlFor="Хлебцы"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <GiBreadSlice size={36} /> <span>Хлебцы</span>
@@ -273,7 +273,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
                 value="Крекеры"
               />
               <label
-                for="Крекеры"
+                htmlFor="Крекеры"
                 className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
               >
                 <Cracker size={36} /> <span>Крекеры</span>

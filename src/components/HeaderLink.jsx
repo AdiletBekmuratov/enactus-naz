@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const notActiveClass = 'px-3 py-2 flex items-center text-xl hover:opacity-75 text-white'
-const activeClass = 'px-3 py-2 flex items-center text-xl font-semibold hover:opacity-75 text-white'
+const notActiveClass = 'px-3 py-2 flex items-center text-2xl hover:opacity-75 text-white'
+const activeClass = 'px-3 py-2 flex items-center text-2xl font-semibold hover:opacity-75 text-white'
 
 const HeaderLink = ({ href, condition, name, onClick }) => {
 	if (!condition) {

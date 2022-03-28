@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="gradient text-white">
       <div className="container px-5 mx-auto py-16 md:py-0 flex flex-wrap flex-col md:flex-row items-center justify-between">
         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <h1 className="my-4 text-2xl md:text-5xl font-bold leading-tight">
+          <h1 className="my-4 text-2xl md:text-4xl font-bold leading-tight">
             Получите индивидуальный план правильного питания
           </h1>
           <p className="leading-normal text-lg md:text-2xl mb-2">
@@ -21,7 +21,7 @@ const Hero = () => {
             src="https://assets10.lottiefiles.com/packages/lf20_tll0j4bb.json"
             background="transparent"
             speed="1"
-						style={{width: "80%"}}
+            style={{ width: "80%" }}
             loop
             autoplay
           ></lottie-player>
