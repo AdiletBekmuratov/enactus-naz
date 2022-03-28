@@ -55,12 +55,6 @@ export default function Header() {
               <HeaderLink
                 condition={true}
                 onClick={handleNavbarClose}
-                href="/"
-                name="Главная"
-              />
-              <HeaderLink
-                condition={true}
-                onClick={handleNavbarClose}
                 href="/plan"
                 name="Создать меню"
               />

@@ -18,7 +18,7 @@ const Description = () => {
             <h2 className="text-lg sm:text-xl font-medium title-font mb-2">
               1.
             </h2>
-            <p className="leading-relaxed text-base mb-4">
+            <p className="leading-relaxed mb-4 text-base md:text-2xl">
               Наш сайт основательно отличается от похожих программ своим
               персонализированным подходом к каждому пользователю. Это сайт для
               получение индивидуального плана правильного питания. Здесь вы
@@ -33,7 +33,7 @@ const Description = () => {
             <h2 className="text-lg sm:text-xl font-medium title-font mb-2">
               2.
             </h2>
-            <p className="leading-relaxed text-base mb-4">
+            <p className="leading-relaxed text-base md:text-2xl mb-4">
               После завершения теста, вам остаётся просто следовать вашему
               персонализированному плану питания. Также, сайт позволит вам
               принять участие в составлении вашей диеты предоставляя вам

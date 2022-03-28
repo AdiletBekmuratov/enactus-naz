@@ -35,14 +35,14 @@ const ContactUs = () => {
             src="https://assets3.lottiefiles.com/packages/lf20_x9mnlnj6.json"
             background="transparent"
             speed="1"
-            style={{width: '100%'}}
+            style={{ width: "100%" }}
             loop
             autoplay
           ></lottie-player>
         </div>
         <div>
           <div className="flex flex-col text-center w-full mb-12">
-            <h2 className="mb-4 text-gray-900">Связаться с нами</h2>
+            <h2 className="mb-4">Связаться с нами</h2>
             <p className="mx-auto leading-relaxed text-base">
               Мы свяжемся с вами в ближайшее время
             </p>

@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 const Plan = () => {
   const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
-  const [gender, setGender] = useState(null);
+  const [step1, setStep1] = useState(null);
   const [milk1, setMilk1] = useState(null);
   const [milk2, setMilk2] = useState(null);
 
@@ -21,13 +21,14 @@ const Plan = () => {
 
   const onFinish = (values) => {
     const data = {
+      ...step1,
       milk1,
       milk2,
       meat,
       ...step4,
       ...values,
     };
-		console.log({data});
+    console.log({ data });
     navigate("/result", { state: { data } });
   };
 
@@ -41,7 +42,7 @@ const Plan = () => {
         <h2>Получите свой план питания</h2>
         <Steps step={currentStep} />
         <StepWizard className="min-h-[300px] mt-10" onStepChange={onStepChange}>
-          <Step1 gender={gender} setGender={setGender} />
+          <Step1 setStep={setStep1} />
           <Step2
             milk1={milk1}
             setMilk1={setMilk1}

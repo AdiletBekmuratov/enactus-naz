@@ -17,7 +17,7 @@ export const publicApi = createApi({
     contactUs: builder.mutation({
       query(body) {
         return {
-          url: `https://www.actionforms.io/e/r/adlet-bekmuratov-test`,
+          url: `https://www.actionforms.io/e/r/nutri-pro-test`,
           method: "POST",
           body,
         };

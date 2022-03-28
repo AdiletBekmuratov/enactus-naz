@@ -100,8 +100,6 @@ const Post = () => {
   const { slug } = params;
   const { data, isLoading, isError, error } = useGetSinglePostQuery(slug);
 
-  console.log(data);
-
   if (isLoading) {
     return (
       <main className="flex flex-1 flex-col justify-center items-center">

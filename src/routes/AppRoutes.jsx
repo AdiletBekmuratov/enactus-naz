@@ -2,9 +2,12 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageLoader from "@/components/PageLoader";
 import ScrollToTop from "@/components/ScrollToTop";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Toaster } from "react-hot-toast";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-8P7BDLG0B0");
 
 const About = lazy(() => import("@/pages/About"));
 const Home = lazy(() => import("@/pages/Home"));
