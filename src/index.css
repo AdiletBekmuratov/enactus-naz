@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+	html{
+		scroll-behavior: smooth;
+		scroll-padding-top: 116px;
+	}
+	
   h1 {
     @apply text-3xl font-bold md:text-4xl font-primary;
   }

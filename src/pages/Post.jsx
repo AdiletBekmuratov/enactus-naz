@@ -6,6 +6,9 @@ import { getImageDimensions } from "@sanity/asset-utils";
 import React from "react";
 import { useParams } from "react-router-dom";
 import Loader from "@/components/Loader";
+import UnstyledLink from "@/components/UnstyledLink";
+import Litres from "@/ads/lith4.png";
+import Technodom from "@/ads/technodom.jpg";
 
 const SampleImageComponent = ({ value, isInline }) => {
   const { width, height } = getImageDimensions(value);
@@ -146,12 +149,29 @@ const Post = () => {
           alt={data?.result?.mainImage?.asset?.url}
           className="h-96 aspect-video rounded object-cover"
         />
+        <div className="w-full flex justify-start">
+          <UnstyledLink
+            href="https://www.litres.ru"
+            className="hover:scale-105 transition-all"
+          >
+            <img src={Litres} alt="litres" className="object-contain h-40" />
+          </UnstyledLink>
+        </div>
       </div>
       <div className="flex flex-col items-start space-y-2 mt-8">
         <PortableText
           value={data?.result?.body}
           components={myPortableTextComponents}
         />
+      </div>
+      <div className="w-full flex justify-start mt-10">
+        <UnstyledLink href="https://www.technodom.kz">
+          <img
+            src={Technodom}
+            alt="Technodom"
+            className="object-contain w-full"
+          />
+        </UnstyledLink>
       </div>
     </main>
   );

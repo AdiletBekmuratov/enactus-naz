@@ -18,7 +18,7 @@ const LatestPosts = () => {
           {isLoading ? (
             <Loader />
           ) : (
-            data.result.map((post) => (
+            data?.result?.map((post) => (
               <PostCard
                 key={post?._id}
                 title={post?.title}

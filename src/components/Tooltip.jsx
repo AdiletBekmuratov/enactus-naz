@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Tooltip = ({text}) => {
+const Tooltip = ({ text }) => {
+  const [show, setShow] = useState(false);
   return (
     <div className="relative flex flex-col items-end group z-30">
       <svg
@@ -8,6 +9,8 @@ const Tooltip = ({text}) => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
         fill="currentColor"
+        onMouseEnter={() => setShow(true)}
+        onMouseLeave={() => setShow(false)}
       >
         <path
           fill-rule="evenodd"
@@ -15,9 +18,14 @@ const Tooltip = ({text}) => {
           clip-rule="evenodd"
         />
       </svg>
-      <div className="absolute top-0 flex-col items-center hidden mt-6 group-hover:flex">
+      <div
+        className={`absolute top-0 flex-col items-center mt-6 ${
+          show ? "flex" : "hidden"
+        }`}
+      >
         {/* <div className="w-3 h-3 -mb-2 rotate-45 bg-black"></div> */}
-        <span className="relative z-10 p-2 text-sm leading-none text-white whitespace-no-wrap bg-black shadow-lg">
+        {/* hidden group-hover:flex */}
+        <span className="relative z-10 p-2 text-sm leading-none text-white rounded whitespace-no-wrap bg-customLightPink shadow-lg">
           {text}
         </span>
       </div>

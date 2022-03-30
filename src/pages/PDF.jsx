@@ -11,6 +11,8 @@ import { GiWaterDrop } from "react-icons/gi";
 import { MdTransferWithinAStation } from "react-icons/md";
 import CardWave from "@/components/CardWave";
 import { getIMTConclusion, getRandomFloat } from "@/helpers/formulas";
+import Litres from "@/ads/lith2.png";
+import UnstyledLink from "@/components/UnstyledLink";
 
 const PDF = () => {
   const { state } = useLocation();
@@ -51,7 +53,7 @@ const PDF = () => {
       <section className="container mx-auto px-5 py-16 text-gray-600">
         <div className="grid grid-cols-1 justify-center items-center gap-6">
           <h2>Резюме вашего профиля</h2>
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div className="min-h-full">
               <CardWave
                 title={"ИМТ"}
@@ -114,21 +116,26 @@ const PDF = () => {
               />
             </div>
           </div>
+
+          <div className="w-full flex justify-center">
+            <UnstyledLink href="https://www.litres.ru" className='hover:scale-105 transition-all'>
+              <img src={Litres} alt="litres" className="object-contain h-60" />
+            </UnstyledLink>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
-            <div className="flex flex-col justify-center items-center space-y-16">
+            <div className="grid grid-cols-1 justify-center items-center justify-items-center gap-16">
               <div className="text-center">
                 <h2>Индивидуальный план питания готов</h2>
                 <h4>Спасибо, что выбираете нас!</h4>
               </div>
-              <MagnetButton>
-                <a
-                  className=" bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-md"
-                  href={instance.url}
-                  download="nutri-pro.pdf"
-                >
-                  Скачать
-                </a>
-              </MagnetButton>
+              <a
+                className=" bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-md"
+                href={instance.url}
+                download="nutri-pro.pdf"
+              >
+                Скачать
+              </a>
               <p>Нажмите на кнопку чтобы скачать файл</p>
             </div>
             <lottie-player
