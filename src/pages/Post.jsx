@@ -12,6 +12,7 @@ import Technodom from "@/ads/technodom.jpg";
 
 const SampleImageComponent = ({ value, isInline }) => {
   const { width, height } = getImageDimensions(value);
+	console.log("Image:", value);
   return (
     <img
       src={urlBuilder({ projectId: "7a4gcr9r", dataset: "production" })
