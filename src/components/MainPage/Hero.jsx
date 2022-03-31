@@ -10,8 +10,7 @@ const Hero = () => {
             Получите индивидуальный план правильного питания
           </h1>
           <p className="leading-normal text-lg md:text-2xl mb-2">
-            Пройдите легкий тест и получите план диетного питания абсолютно
-            бесплатно!
+            Пройдите легкий тест и получите план диетного питания!
           </p>
           <Link to={'/plan'} className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Начать
