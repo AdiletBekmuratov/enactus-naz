@@ -31,7 +31,7 @@ const Step1 = ({ nextStep, setStep }) => {
         <Form className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-10">
           <div className="flex flex-col space-y-10 justify-center items-start">
             <h2>Пол</h2>
-            <div className="flex space-x-10 justify-center items-center">
+            <div className="grid grid-cols-2 gap-4 lg:gap-10 items-center">
               <div className="min-h-full">
                 <Field
                   id="maleRadio"
@@ -42,7 +42,7 @@ const Step1 = ({ nextStep, setStep }) => {
                 />
                 <label
                   htmlFor="maleRadio"
-                  className="css-label flex flex-col space-y-4 justify-center items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px]"
+                  className="css-label flex flex-col space-y-4 justify-center items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px]"
                 >
                   <FaMale size={36} /> <span>Мужчина</span>
                 </label>
@@ -58,7 +58,7 @@ const Step1 = ({ nextStep, setStep }) => {
                 />
                 <label
                   htmlFor="femaleRadio"
-                  className="css-label flex flex-col space-y-4 justify-center items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px]"
+                  className="css-label flex flex-col space-y-4 justify-center items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px]"
                 >
                   <FaFemale size={36} /> <span>Женщина</span>
                 </label>
@@ -66,34 +66,34 @@ const Step1 = ({ nextStep, setStep }) => {
             </div>
 
             <h2>Параметры</h2>
-            <div className="flex flex-col space-y-5 justify-center items-center">
-              <div className="min-h-full">
+            <div className="flex flex-col space-y-5 justify-center items-center w-full">
+              <div className="min-h-full w-full">
                 <Field
                   type="number"
                   min="0"
                   placeholder="Ваш возраст"
                   name="age"
-                  className="rounded-full border-customLightPink border py-2 px-4 text-xl focus:ring-2 focus:ring-pink-200 focus:border-customDarkPink focus:bg-white"
+                  className="rounded-full w-full max-w-xs border-customLightPink border py-2 px-4 text-xl focus:ring-2 focus:ring-pink-200 focus:border-customDarkPink focus:bg-white"
                 />
               </div>
 
-              <div className="min-h-full">
+              <div className="min-h-full w-full">
                 <Field
                   type="number"
                   min="0"
                   placeholder="Ваш рост, см"
                   name="height"
-                  className="rounded-full border-customLightPink border py-2 px-4 text-xl focus:ring-2 focus:ring-pink-200 focus:border-customDarkPink focus:bg-white"
+                  className="rounded-full w-full max-w-xs border-customLightPink border py-2 px-4 text-xl focus:ring-2 focus:ring-pink-200 focus:border-customDarkPink focus:bg-white"
                 />
               </div>
 
-              <div className="min-h-full">
+              <div className="min-h-full w-full">
                 <Field
                   type="number"
                   min="0"
                   placeholder="Ваш вес, кг"
                   name="weight"
-                  className="rounded-full border-customLightPink border py-2 px-4 text-xl focus:ring-2 focus:ring-pink-200 focus:border-customDarkPink focus:bg-white"
+                  className="rounded-full w-full max-w-xs border-customLightPink border py-2 px-4 text-xl focus:ring-2 focus:ring-pink-200 focus:border-customDarkPink focus:bg-white"
                 />
               </div>
             </div>
@@ -113,7 +113,7 @@ const Step1 = ({ nextStep, setStep }) => {
             src="https://assets6.lottiefiles.com/packages/lf20_xyadoh9h.json"
             background="transparent"
             speed="1"
-            style={{width: '80%'}}
+            style={{ width: "80%" }}
             loop
             autoplay
           ></lottie-player>

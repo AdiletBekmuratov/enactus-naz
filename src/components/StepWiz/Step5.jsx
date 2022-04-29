@@ -33,7 +33,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               <span className="text-red-500">*</span> Можно выбрать несколько
             </p>
           </div>
-          <div className="flex space-x-10 items-stretch flex-wrap">
+          <div className="grid grid-cols-4 gap-4 lg:gap-10 items-stretch">
             <div className="min-h-full">
               <Field
                 id="Грецкий"
@@ -44,7 +44,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Грецкий"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Walnut size={36} /> <span>Грецкий</span>
               </label>
@@ -60,7 +60,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Миндаль"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Almond size={36} /> <span>Миндаль</span>
               </label>
@@ -76,7 +76,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Кешью"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Cashew size={36} /> <span>Кешью</span>
               </label>
@@ -91,7 +91,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Арахис"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <GiPeanut size={36} /> <span>Арахис</span>
               </label>
@@ -104,7 +104,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               <span className="text-red-500">*</span> Можно выбрать несколько
             </p>
           </div>
-          <div className="flex space-x-10 items-stretch">
+          <div className="grid grid-cols-4 gap-4 lg:gap-10 items-stretch">
             <div className="min-h-full">
               <Field
                 id="Курага"
@@ -115,7 +115,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Курага"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Apricot size={36} /> <span>Курага</span>
               </label>
@@ -131,7 +131,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Чернослив"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Pranes size={36} /> <span>Чернослив</span>
               </label>
@@ -147,7 +147,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Изюм"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Raisin size={36} /> <span>Изюм</span>
               </label>
@@ -162,7 +162,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Финики"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Dates size={36} /> <span>Финики</span>
               </label>
@@ -175,7 +175,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               <span className="text-red-500">*</span> Можно выбрать несколько
             </p>
           </div>
-          <div className="flex space-x-10 items-stretch">
+          <div className="grid grid-cols-3 gap-4 lg:gap-10 items-stretch">
             <div className="min-h-full">
               <Field
                 id="Укроп"
@@ -186,7 +186,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Укроп"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Dill size={36} /> <span>Укроп</span>
               </label>
@@ -202,7 +202,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Петрушка"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Parsley size={36} /> <span>Петрушка</span>
               </label>
@@ -218,7 +218,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Листья салата"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Lettuce size={36} /> <span>Листья салата</span>
               </label>
@@ -231,7 +231,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               <span className="text-red-500">*</span> Можно выбрать несколько
             </p>
           </div>
-          <div className="flex space-x-10 items-stretch">
+          <div className="grid grid-cols-3 gap-4 lg:gap-10 items-stretch">
             <div className="min-h-full">
               <Field
                 id="Цельнозерновой хлеб"
@@ -242,7 +242,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Цельнозерновой хлеб"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-lg w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-[1.025rem] w-full sm:w-[160px] h-full text-center"
               >
                 <FaBreadSlice size={36} /> <span>Цельнозерновой хлеб</span>
               </label>
@@ -258,7 +258,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Хлебцы"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <GiBreadSlice size={36} /> <span>Хлебцы</span>
               </label>
@@ -274,7 +274,7 @@ const Step5 = ({ nextStep, previousStep, onFinish }) => {
               />
               <label
                 htmlFor="Крекеры"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <Cracker size={36} /> <span>Крекеры</span>
               </label>

@@ -10,7 +10,7 @@ const Step3 = ({ nextStep, previousStep, meat, setMeat }) => {
   return (
     <div className="flex flex-col space-y-10 justify-center items-start">
       <h2>Мясо</h2>
-      <div className="flex space-x-10 items-stretch">
+      <div className="grid grid-cols-3 gap-4 lg:gap-10 items-stretch">
         <div className="min-h-full">
           <input
             id="Куриная грудка"
@@ -22,7 +22,7 @@ const Step3 = ({ nextStep, previousStep, meat, setMeat }) => {
           />
           <label
             htmlFor="Куриная грудка"
-            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
           >
             <GiRoastChicken size={36} /> <span>Куриная грудка</span>
           </label>
@@ -39,7 +39,7 @@ const Step3 = ({ nextStep, previousStep, meat, setMeat }) => {
           />
           <label
             htmlFor="Индейка"
-            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
           >
             <GiChickenOven size={36} /> <span>Индейка</span>
           </label>
@@ -56,7 +56,7 @@ const Step3 = ({ nextStep, previousStep, meat, setMeat }) => {
           />
           <label
             htmlFor="Страус"
-            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
           >
             <Ostrich size={36} /> <span>Страус</span>
           </label>

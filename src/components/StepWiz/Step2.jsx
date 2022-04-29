@@ -23,7 +23,7 @@ const Step2 = ({
   return (
     <div className="flex flex-col space-y-10 justify-center items-start">
       <h2>Молочные продукты</h2>
-      <div className="flex space-x-10 items-stretch">
+      <div className="grid grid-cols-3 gap-4 lg:gap-10 items-stretch">
         <div className="min-h-full">
           <input
             id="milk"
@@ -35,7 +35,7 @@ const Step2 = ({
           />
           <label
             htmlFor="milk"
-            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
           >
             <GiCow size={36} /> <span>Молоко 2,5%</span>
           </label>
@@ -51,7 +51,7 @@ const Step2 = ({
           />
           <label
             htmlFor="slivki"
-            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
           >
             <GiMilkCarton size={36} /> <span>Сливки</span>
           </label>
@@ -67,14 +67,14 @@ const Step2 = ({
           />
           <label
             htmlFor="sgushenka"
-            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
           >
             <GiCoveredJar size={36} /> <span>Сгущенка</span>
           </label>
         </div>
       </div>
 
-      <div className="flex space-x-10 items-stretch">
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-4 lg:gap-10 items-stretch">
         <div className="min-h-full">
           <input
             id="tvorog"
@@ -86,7 +86,7 @@ const Step2 = ({
           />
           <label
             htmlFor="tvorog"
-            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
           >
             <BiDish size={36} /> <span>Творог 5%</span>
           </label>
@@ -102,7 +102,7 @@ const Step2 = ({
           />
           <label
             htmlFor="tofu"
-            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
           >
             <GiCubes size={36} /> <span>Тофу</span>
           </label>
@@ -118,7 +118,7 @@ const Step2 = ({
           />
           <label
             htmlFor="rikottu"
-            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
           >
             <FaDashcube size={36} /> <span>Рикотту</span>
           </label>
@@ -134,7 +134,7 @@ const Step2 = ({
           />
           <label
             htmlFor="maskrapone"
-            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+            className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
           >
             <SiRoundcube size={36} /> <span>Маскарпоне</span>
           </label>

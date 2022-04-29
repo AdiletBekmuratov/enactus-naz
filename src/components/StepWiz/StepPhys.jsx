@@ -24,7 +24,7 @@ const StepPhys = ({ nextStep, previousStep, setStep }) => {
       {({ values }) => (
         <Form className="flex flex-col space-y-10 justify-center items-start">
           <h2>Физическая активность</h2>
-          <div className="flex space-x-10 items-stretch">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4 lg:gap-10 items-stretch w-full">
             <div className="min-h-full">
               <Field
                 id="activity1"
@@ -35,7 +35,7 @@ const StepPhys = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="activity1"
-                className="css-label flex flex-col space-y-4 justify-start items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-start items-center p-2 md:p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <IoFootstepsSharp size={36} />{" "}
                 <span>Физическая нагрузка отсутствует или минимальная</span>
@@ -51,7 +51,7 @@ const StepPhys = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="activity2"
-                className="css-label flex flex-col space-y-4 justify-start items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-start items-center p-2 md:p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <IoBarbellOutline size={36} />{" "}
                 <span>Тренировки средней тяжести 3 раза в неделю</span>
@@ -67,7 +67,7 @@ const StepPhys = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="activity3"
-                className="css-label flex flex-col space-y-4 justify-start items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-start items-center p-2 md:p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <IoBarbellSharp size={36} />{" "}
                 <span>Тренировки средней тяжести 5 раз в неделю</span>
@@ -83,7 +83,7 @@ const StepPhys = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="activity4"
-                className="css-label flex flex-col space-y-4 justify-start items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-start items-center p-2 md:p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <BsTrophyFill size={36} />{" "}
                 <span>Интенсивные тренировки 5 раз в неделю</span>
@@ -99,7 +99,7 @@ const StepPhys = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="activity5"
-                className="css-label flex flex-col space-y-4 justify-start items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-start items-center p-2 md:p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <SiStreamlit size={36} /> <span>Тренировки каждый день</span>
               </label>
@@ -115,7 +115,7 @@ const StepPhys = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="activity6"
-                className="css-label flex flex-col space-y-4 justify-start items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-start items-center p-2 md:p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <GiWeight size={36} />{" "}
                 <span>
@@ -134,7 +134,7 @@ const StepPhys = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="activity7"
-                className="css-label flex flex-col space-y-4 justify-start items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-start items-center p-2 md:p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <GiWeightLiftingUp size={36} />{" "}
                 <span>Ежедневная физическая нагрузка + физическая работа</span>

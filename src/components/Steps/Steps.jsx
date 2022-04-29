@@ -15,7 +15,7 @@ const iconClasses =
 
 const Steps = ({ step }) => {
   return (
-    <div className="flex justify-evenly flex-nowrap items-center space-x-4">
+    <div className="grid grid-cols-6 md:grid-cols-11 justify-between flex-nowrap items-center gap-2 lg:gap-4">
       <BlobStep
         text={"Общая информация"}
         icon={<BsFillPersonFill className={iconClasses} />}
@@ -28,7 +28,7 @@ const Steps = ({ step }) => {
         }
       />
       <StepStroke
-        className={`w-full transition duration-200 ease-in-out ${
+        className={`w-full transition duration-200 ease-in-out hidden md:block ${
           step >= 2 ? "text-customLightPink" : "text-gray-200"
         }`}
       />
@@ -44,7 +44,7 @@ const Steps = ({ step }) => {
         }
       />
       <StepStroke2
-        className={`w-full transition duration-200 ease-in-out ${
+        className={`w-full transition duration-200 ease-in-out hidden md:block ${
           step >= 3 ? "text-customLightPink" : "text-gray-200"
         }`}
       />
@@ -60,7 +60,7 @@ const Steps = ({ step }) => {
         }
       />
       <StepStroke
-        className={`w-full transition duration-200 ease-in-out ${
+        className={`w-full transition duration-200 ease-in-out hidden md:block ${
           step >= 4 ? "text-customLightPink" : "text-gray-200"
         }`}
       />
@@ -76,7 +76,7 @@ const Steps = ({ step }) => {
         }
       />
       <StepStroke2
-        className={`w-full transition duration-200 ease-in-out ${
+        className={`w-full transition duration-200 ease-in-out hidden md:block ${
           step >= 5 ? "text-customLightPink" : "text-gray-200"
         }`}
       />
@@ -92,7 +92,7 @@ const Steps = ({ step }) => {
         }
       />
       <StepStroke
-        className={`w-full transition duration-200 ease-in-out ${
+        className={`w-full transition duration-200 ease-in-out hidden md:block ${
           step >= 6 ? "text-customLightPink" : "text-gray-200"
         }`}
       />

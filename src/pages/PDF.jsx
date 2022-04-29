@@ -13,6 +13,7 @@ import CardWave from "@/components/CardWave";
 import { getIMTConclusion, getRandomFloat } from "@/helpers/formulas";
 import Litres from "@/ads/lith2.png";
 import UnstyledLink from "@/components/UnstyledLink";
+import Donate from "@/components/Donate";
 
 const PDF = () => {
   const { state } = useLocation();
@@ -118,12 +119,26 @@ const PDF = () => {
           </div>
 
           <div className="w-full flex justify-center">
-            <UnstyledLink href="https://www.litres.ru" className='hover:scale-105 transition-all'>
+            <UnstyledLink
+              href="https://www.litres.ru"
+              className="hover:scale-105 transition-all"
+            >
               <img src={Litres} alt="litres" className="object-contain h-60" />
             </UnstyledLink>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
+            <div className="hidden md:block">
+              <lottie-player
+                src="https://assets6.lottiefiles.com/packages/lf20_1vfd6t8p.json"
+                background="transparent"
+                speed="1"
+                style={{ width: "100%" }}
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+
             <div className="grid grid-cols-1 justify-center items-center justify-items-center gap-16">
               <div className="text-center">
                 <h2>Индивидуальный план питания готов</h2>
@@ -138,18 +153,12 @@ const PDF = () => {
               </a>
               <p>Нажмите на кнопку чтобы скачать файл</p>
             </div>
-            <lottie-player
-              src="https://assets6.lottiefiles.com/packages/lf20_1vfd6t8p.json"
-              className="hidden md:block"
-              background="transparent"
-              speed="1"
-              style={{ width: "100%" }}
-              loop
-              autoplay
-            ></lottie-player>
           </div>
+
+          <Donate />
         </div>
       </section>
+
       <ContactUs />
     </>
   );

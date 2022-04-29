@@ -33,7 +33,7 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
             </p>
           </div>
 
-          <div className="flex space-x-10 items-stretch">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-10 items-stretch">
             <div className="min-h-full">
               <Field
                 id="Кабачки"
@@ -44,7 +44,7 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="Кабачки"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <SiCucumber size={36} /> <span>Кабачки</span>
               </label>
@@ -60,7 +60,7 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="Грибы"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <GiMushroomGills size={36} /> <span>Грибы (шампиньоны)</span>
               </label>
@@ -76,7 +76,7 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="Цветная капуста"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <GiBroccoli size={36} /> <span>Цветная капуста/брокколи</span>
               </label>
@@ -91,7 +91,7 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="Болгарский перец"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <BellPepper size={36} /> <span>Болгарский перец</span>
               </label>
@@ -106,7 +106,7 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="Шпинат"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-xl w-full sm:w-[160px] h-full text-center"
               >
                 <Spinach size={36} /> <span>Шпинат</span>
               </label>
@@ -120,7 +120,7 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
             </p>
           </div>
 
-          <div className="flex space-x-10 items-stretch">
+          <div className="grid grid-cols-3 gap-4 lg:gap-10 items-stretch w-full sm:w-auto">
             <div className="min-h-full">
               <Field
                 id="Персик"
@@ -131,7 +131,7 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="Персик"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <GiPeach size={36} /> <span>Персик</span>
               </label>
@@ -147,7 +147,7 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="Апельсин"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <GiOrange size={36} /> <span>Апельсин</span>
               </label>
@@ -163,7 +163,7 @@ const Step4 = ({ nextStep, previousStep, setStep }) => {
               />
               <label
                 htmlFor="Мандарин"
-                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-2xl w-[160px] h-full text-center"
+                className="css-label flex flex-col space-y-4 justify-between items-center p-5 bg-white shadow-md rounded-lg text-xs sm:text-2xl w-full sm:w-[160px] h-full text-center"
               >
                 <GiOrangeSlice size={36} /> <span>Мандарин</span>
               </label>

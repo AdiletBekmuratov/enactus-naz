@@ -1,4 +1,5 @@
 import ContactUs from "@/components/ContactUs";
+import Donate from "@/components/Donate";
 import React from "react";
 
 const About = () => {
@@ -49,6 +50,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Donate />
       <ContactUs />
     </>
   );
